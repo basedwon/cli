@@ -45,27 +45,32 @@ and shell for executing shell commands.
 Core utility wrapper around lodash for CLI operations.
 
 **Kind**: global constant  
+**Link**: https://npmjs.com/package/basd  
 <a name="shell"></a>
 
 ## shell : <code>Object</code>
 ShellJS module for executing shell commands through Node.js.
 
 **Kind**: global constant  
+**Link**: https://npmjs.com/package/shelljs  
 <a name="prompts"></a>
 
 ## prompts : <code>Object</code>
 Prompts module for interactive command line user interfaces.
 
 **Kind**: global constant  
+**Link**: https://npmjs.com/package/prompts  
 <a name="colors"></a>
 
 ## colors : <code>Object</code>
 cli-color provides color and formatting for CLI output.
 
 **Kind**: global constant  
+**Link**: https://npmjs.com/package/cli-color  
 <a name="Commander"></a>
 
 ## Commander : <code>Object</code>
 Commander.js, a complete solution for node.js command-line interfaces.
 
 **Kind**: global constant  
+**Link**: https://npmjs.com/package/commander  

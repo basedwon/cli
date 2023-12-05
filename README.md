@@ -141,15 +141,12 @@ console.log(colors.red('This is a red text'))
 
 ## Documentation
 
-- [API Reference](/docs/api.md)
-
-- [**commander**](https://npmjs.com/package/commander){:target="_blank"}: Interface for defining commands and options.
-- [**Progress & Spinner**](https://npmjs.com/package/@basd/spinner){:target="_blank"}: Utilities for displaying progress bars and spinners.
-- [**prompts**](https://npmjs.com/package/prompts){:target="_blank"}: For creating interactive command-line prompts.
-- [**colors**](https://npmjs.com/package/cli-color){:target="_blank"}: Enhance your CLI output with colored text.
-- [**shell**](https://npmjs.com/package/shelljs){:target="_blank"}: Execute shell commands within your Node.js application.
-
-For more detailed usage of each module, refer to their respective documentation.
+- [API Reference](/docs/api.md): Based on jsdoc comments.
+- [**commander**](https://npmjs.com/package/commander): Interface for defining commands and options.
+- [**Progress & Spinner**](https://npmjs.com/package/@basd/spinner): Utilities for displaying progress bars and spinners.
+- [**prompts**](https://npmjs.com/package/prompts): For creating interactive command-line prompts.
+- [**colors**](https://npmjs.com/package/cli-color): Enhance your CLI output with colored text.
+- [**shell**](https://npmjs.com/package/shelljs): Execute shell commands within your Node.js application.
 
 ## Tests
 
