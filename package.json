@@ -1,0 +1,59 @@
+{
+  "name": "@basd/cli",
+  "version": "0.0.0",
+  "description": "A comprehensive Node.js module providing a set of tools for creating elegant command line interfaces by wrapping several popular CLI tools into one cohesive package.",
+  "author": "Basedwon <basedwon@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basedwon/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/basedwon/cli/issues"
+  },
+  "homepage": "https://github.com/basedwon/cli#readme",
+  "main": "lib/main.js",
+  "scripts": {
+    "dev:test": "nodemon -w .. -x npm test",
+    "dev": "nodemon ./test/tester",
+    "docs": "jsdoc2md \"lib/**/*.js\" > docs/api.md",
+    "update": "npm run update:prod && npm run update:dev",
+    "update:prod": "npm i -S basd@latest @basd/spinner@latest",
+    "update:dev": "npm i -D @basd/testr@latest",
+    "test": "testr test"
+  },
+  "dependencies": {
+    "@basd/spinner": "^0.0.2",
+    "basd": "^1.0.16",
+    "cli-color": "^2.0.3",
+    "commander": "^11.1.0",
+    "prompts": "^2.4.2",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@basd/testr": "^0.1.3",
+    "jsdoc": "^4.0.2",
+    "jsdoc-to-markdown": "^8.0.0"
+  },
+  "keywords": [
+    "cli",
+    "command-line",
+    "nodejs",
+    "commander",
+    "shelljs",
+    "prompts",
+    "cli-color",
+    "cli-spinner",
+    "cli-progress",
+    "lodash",
+    "utilities",
+    "scripting",
+    "shell-commands",
+    "interactive-cli",
+    "node-utilities",
+    "command-line-tool",
+    "bash",
+    "terminal",
+    "console"
+  ]
+}
