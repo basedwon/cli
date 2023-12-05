@@ -1,6 +1,6 @@
 {
   "name": "@basd/cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A comprehensive Node.js module providing a set of tools for creating elegant command line interfaces by wrapping several popular CLI tools into one cohesive package.",
   "author": "Basedwon <basedwon@protonmail.com>",
   "license": "MIT",
