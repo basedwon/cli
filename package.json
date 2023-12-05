@@ -23,7 +23,7 @@
     "test": "testr test"
   },
   "dependencies": {
-    "@basd/spinner": "^0.0.3",
+    "@basd/spinner": "^0.0.5",
     "basd": "^1.0.16",
     "cli-color": "^2.0.3",
     "commander": "^11.1.0",
@@ -31,7 +31,7 @@
     "shelljs": "^0.8.5"
   },
   "devDependencies": {
-    "@basd/testr": "^0.1.4",
+    "@basd/testr": "^0.1.6",
     "jsdoc": "^4.0.2",
     "jsdoc-to-markdown": "^8.0.0"
   },
