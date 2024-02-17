@@ -36,6 +36,10 @@ The `@basd/cli` module is designed to be intuitive for developers familiar with 
 
 The `commander` module in `@basd/cli` is used for building command-line interfaces with support for commands, options, and sub-commands.
 
+Keeping inline with Commander's own recommendations for [declaring the `program` variable](https://github.com/tj/commander.js/tree/v11.1.0?tab=readme-ov-file#declaring-program-variable), this presents two ways to create an instance:
+
+For simpler CLI applications, where everything fits easily in one file:
+
 ```js
 const { program } = require('@basd/cli')
 
@@ -52,6 +56,41 @@ program
 
 // Parse command-line arguments
 program.parse(process.argv)
+```
+
+For more complex application, where you have the need to spread logic out across multiple files:
+
+```js
+// main.js
+const { Command } = require('@basd/cli')
+const program = new Command()
+
+// Attach subcommand
+const { addServeCommand } = require("./serve")
+addServeCommand(program);
+
+// Parse command-line arguments
+program.parse(process.argv)
+```
+
+```js
+// serve.js
+function addServeCommand(program) {
+  // Define a new command with options
+  return program
+    .command('serve [port]')
+    .description('Start the server')
+    .option('-d, --debug', 'output extra debugging')
+    .action((port, options) => {
+      const portNumber = port || 3000
+      console.log(`Server running on port ${portNumber}`)
+      if (options.debug) console.log('Debugging mode is on')
+    })
+}
+
+module.exports = {
+    addServeCommand
+}
 ```
 
 ### ShellJS
